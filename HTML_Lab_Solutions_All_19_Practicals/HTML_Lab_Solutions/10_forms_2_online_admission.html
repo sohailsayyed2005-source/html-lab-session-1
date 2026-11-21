@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head><title>Online Admission Form</title></head>
+<body>
+    <h1>Online Admission Form</h1>
+    <form>
+        <label>Student Name:</label>
+        <input type="text" name="name" required minlength="3"><br><br>
+        <label>Email:</label>
+        <input type="email" name="email" required><br><br>
+        <label>Mobile Number:</label>
+        <input type="tel" name="mobile" pattern="[0-9]{10}" placeholder="10 digit number" required><br><br>
+        <label>Age:</label>
+        <input type="number" name="age" min="16" max="60" required><br><br>
+        <label>Date of Birth:</label>
+        <input type="date" name="dob" required><br><br>
+        <label>Course:</label>
+        <select name="course" required><option value="">Select course</option><option>MCA</option><option>BCA</option><option>BBA</option></select><br><br>
+        <label>Upload marksheet:</label>
+        <input type="file" name="marksheet" accept=".pdf,.jpg,.png" required><br><br>
+        <input type="checkbox" required> I confirm that the information is correct.<br><br>
+        <input type="submit" value="Submit Application">
+    </form>
+</body>
+</html>
